@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a000"
+    >
+
+    <TextView
+        android:id="@+id/call_phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+       
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/callout_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通话状态"
+        android:textColor="@color/white"
+          android:layout_centerHorizontal="true"
+        android:layout_below="@id/call_phoneNumber"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/callout_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/callout_status"
+        android:textColor="@color/white"
+        android:textSize="20sp"  />
+
+    <ImageView
+        android:id="@+id/callout_icon"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/call_icon1" />
+
+    
+
+    <Button
+        android:id="@+id/callout_switch_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/callout_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+         android:text="切换"
+        android:textSize="20sp"
+        android:background="@null"
+        android:drawableTop="@drawable/btn_siwtch_call_selector"
+        android:textColor="@color/white" />
+    
+    <Button
+        android:id="@+id/callout_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="挂断"
+        android:textSize="20sp"
+         android:background="@null"
+        android:layout_toLeftOf="@id/callout_switch_video"
+        android:layout_alignTop="@id/callout_switch_video"
+        android:drawableTop="@drawable/btn_call_cancel_selector"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/callout_mute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:text="静音"
+        android:textSize="20sp"
+         android:background="@null"
+         android:layout_alignTop="@id/callout_switch_video"
+         android:layout_toRightOf="@id/callout_switch_video"
+        android:drawableTop="@drawable/btn_call_mutel_selector"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:visibility="invisible"
+    android:id="@+id/rl_log_response"
+    android:background="@color/transparent"
+    android:layout_toRightOf="@id/rl_root_home" >
+
+    <TextView
+        android:id="@+id/tv_log_response_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+       
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:text="请选择您的问题" />
+
+    <RadioGroup
+        android:id="@+id/rg_log_title"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_log_response_title"
+        android:layout_below="@id/tv_log_response_title" >
+
+        <!-- 默认选中b1 -->
+
+        <RadioButton
+            android:id="@+id/rb1"
+               android:textSize="20dp"
+        android:textColor="@color/white"
+            android:text="收不到来电提示" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+               android:textSize="20dp"
+        android:textColor="@color/white"
+            android:text="通话过程中看不到对方视频" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+               android:textSize="20dp"
+        android:textColor="@color/white"
+            android:text="通话过程中听不到对方声音" />
+
+        <RadioButton
+            android:id="@+id/rb4"
+               android:textSize="20dp"
+        android:textColor="@color/white"
+            android:text="其它" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_content_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_log_response_title"
+        android:layout_below="@id/rg_log_title"
+        android:layout_marginTop="10dp"
+           android:textSize="20dp"
+        android:textColor="@color/white"
+        android:text="补充内容" />
+
+    <EditText
+        android:id="@+id/et_log_content"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_log_response_title"
+        android:layout_below="@id/tv_content_label"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:maxLines="4"
+        android:minLines="4"
+         android:paddingLeft="10dp"
+       android:background="@drawable/border_backgroup_normal_shape"
+       android:hint="请简要描述你的问题"
+        android:scrollbars="vertical" >
+    </EditText>
+
+    <TextView android:layout_width="wrap_content"
+        android:id="@+id/tv_logtime_label"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_log_response_title"
+        android:textColor="@color/white"
+        android:layout_below="@id/et_log_content"
+           android:textSize="20dp"
+       android:layout_marginTop="10dp"
+        android:text="故障发生时间"
+         />
+    
+    <TextView android:layout_width="wrap_content"
+        android:id="@+id/tv_logtime"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_logtime_label"
+        android:focusable="true"
+        android:layout_marginLeft="10dp"
+         android:textColor="@drawable/font_color_selector"
+        android:layout_alignTop="@id/tv_logtime_label"
+
+           android:textSize="20dp"
+           
+  
+         />
+  
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit_log"
+        android:layout_alignLeft="@id/tv_log_response_title"
+        android:layout_below="@id/tv_logtime_label"
+          android:background="@drawable/btn_grenn_selector"
+        android:textColor="@color/white"
+        android:hint="提交"
+     />
+
+</RelativeLayout>

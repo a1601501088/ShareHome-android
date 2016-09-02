@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root_white_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_toRightOf="@id/rl_root_home"
+    android:visibility="invisible"
+  >
+
+    <Button
+        android:id="@+id/btn_add_white_contact_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_add_white_contact_selector"
+        android:paddingRight="40dp"
+        android:gravity="right|center_vertical"
+        android:text="添加"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btn_delete_white_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btn_add_white_contact_1"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/btn_add_white_contact_1"
+        android:background="@drawable/btn_delete_white_contact_selector"
+        android:paddingRight="40dp"
+        android:gravity="right|center_vertical"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_hint_label"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="没有白名单"
+        android:textSize="20sp"
+         android:textColor="@color/grey2"
+        android:layout_alignLeft="@id/btn_add_white_contact_1"
+        android:layout_alignRight="@id/btn_delete_white_contact"
+        android:layout_below="@id/btn_add_white_contact_1"
+        />
+    <ListView
+        android:id="@+id/lv_white_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_alignLeft="@id/btn_add_white_contact_1"
+        android:layout_alignRight="@id/btn_delete_white_contact"
+        android:layout_below="@id/btn_add_white_contact_1"
+        android:layout_marginTop="5dp"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/rl_input_white_contact_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/lv_white_list"
+        android:layout_marginLeft="5dp"
+        android:visibility="invisible"
+        android:layout_toRightOf="@id/lv_white_list"
+       >
+
+        <EditText
+            android:id="@+id/et_white_contact_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_backgroup_normal_shape"
+            android:ems="10"
+            android:hint="请输入姓名"
+            android:textCursorDrawable="@drawable/color_cursor" 
+             android:textColor="@color/white"
+            android:paddingBottom="20dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="20dp" />
+
+        <EditText
+            android:id="@+id/et_white_contact_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_white_contact_username"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border_backgroup_normal_shape"
+            android:ems="10"
+            android:hint="请输入账号"
+             android:textCursorDrawable="@drawable/color_cursor" 
+            android:textColor="@color/white"
+            android:paddingBottom="20dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="20dp" />
+
+        <Button
+            android:id="@+id/btn_white_contact_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/et_white_contact_username"
+            android:layout_below="@id/et_white_contact_account"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_red_selector"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <!-- android:background="@drawable/btn_cancel_white_contact_selector" -->
+
+        <Button
+            android:id="@+id/btn_white_contact_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/btn_white_contact_cancel"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/btn_white_contact_cancel"
+            android:background="@drawable/btn_grenn_selector"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <!-- android:background="@drawable/btn_save_white_contact_selector" -->
+    </RelativeLayout>
+
+</RelativeLayout>

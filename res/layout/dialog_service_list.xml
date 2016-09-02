@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent" >
+
+    <TextView 
+        android:id="@+id/tv_service_label"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:textColor="@color/LightSeaGreen"
+        android:layout_height="wrap_content"
+        android:text="服务条款"/>
+    
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_below="@id/tv_service_label"
+        android:layout_width="wrap_content"
+        android:layout_height="600dp" >
+
+        <TextView
+            android:id="@+id/tv_service_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/service_list"
+            android:textColor="@color/white" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_service_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/sv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+       android:background="@drawable/btn_drak_green_selector"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_contact2_selector"
+   >
+
+    <ImageView
+        android:id="@+id/iv_contance_icon"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/call_log_defaulf_head" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_contance_icon"
+        android:text="姓名"
+        android:layout_marginLeft="15dp"
+        android:layout_alignTop="@id/iv_contance_icon"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_moblie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_contance_icon"
+        android:text="1111111111"
+        android:layout_marginLeft="15dp"
+        android:layout_alignBottom="@id/iv_contance_icon"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+   <CheckBox 
+       android:id="@+id/cb_check"
+       android:layout_width="wrap_content"
+       android:layout_centerVertical="true"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="15dp"
+     	android:focusable="false"
+     	android:button="@drawable/check_box_selector"
+     	android:focusableInTouchMode="false"
+       android:visibility="invisible"
+       android:layout_height="wrap_content"/>
+    <!--   android:button="@drawable/check_box_selector" -->
+
+</RelativeLayout>

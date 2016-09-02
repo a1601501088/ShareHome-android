@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_root_home"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" >
+
+        <com.vunken.tv_sharehome.utils.RoundImageView
+            android:id="@+id/iv_head"
+            style="@style/enabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_setting_head" />
+
+        <Button
+            android:id="@+id/btn_account"
+            style="@style/enabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@+id/iv_head"
+            android:background="@null"
+            android:text="1234567"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btn_share_friend"
+            style="@style/MySetting_btn_style"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_below="@id/iv_head"
+            android:drawableLeft="@drawable/ic_setting_share"
+            android:text="  分享给好友" />
+
+        <Button
+            android:id="@+id/btn_show_white_list"
+            style="@style/MySetting_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_share_friend"
+            android:drawableLeft="@drawable/ic_setting_white_log"
+            android:text="  白名单" />
+
+        <Button
+            android:id="@+id/btn_service_list"
+            style="@style/MySetting_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_show_white_list"
+            android:drawableLeft="@drawable/ic_service_list"
+            android:text="  服务条款" />
+        
+           <Button
+            android:id="@+id/btn_log_response"
+            style="@style/MySetting_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_service_list"
+            android:drawableLeft="@drawable/ic_question"
+            android:text="  问题反馈" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            style="@style/MySetting_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_log_response"
+            android:drawableLeft="@drawable/ic_log_out"
+            android:text="  退出登录" />
+        
+        
+          
+    </RelativeLayout>
+    <!--  分享给好友-->
+    <include layout="@layout/setting_share_to_friend_layout"/>
+    <!--  白名单-->
+    <include layout="@layout/setting_white_log_layout"/>
+
+     <!--  问题反馈-->
+    <include layout="@layout/setting_log_response"/>
+   
+
+</RelativeLayout>

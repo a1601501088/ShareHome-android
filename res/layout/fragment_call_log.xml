@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:paddingTop="20dp" >
+    
+
+    <TextView
+        android:id="@+id/tv_not_call_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:text="没有通话记录"
+        android:textSize="20sp"
+        android:focusable="false"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="150dp"
+        android:textColor="@color/grey2"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_remove_all"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:paddingBottom="5dp"
+        android:gravity="left|center_vertical"
+        android:drawableLeft="@drawable/btn_clear_call_log_selector"
+        android:paddingLeft="100dp"
+        android:background="@drawable/btn_drak_green_selector"
+        android:text="清空通话记录"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+   
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="@dimen/size2"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/btn_remove_all"
+        android:layout_alignRight="@id/btn_remove_all"
+        android:layout_below="@id/btn_remove_all"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:background="@color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

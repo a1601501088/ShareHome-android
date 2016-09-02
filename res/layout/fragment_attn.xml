@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="fill"
+    android:paddingLeft="20dp" >
+
+    <EditText
+        android:id="@+id/attn_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/call_et_selector"
+        android:cursorVisible="true"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="25sp" >
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/attn_clear"
+        style="@style/focusable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/attn_phone"
+        android:layout_toRightOf="@id/attn_phone"
+        android:layout_marginTop="-6dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/text_delete_selector" />
+
+    <ImageButton
+        android:id="@+id/attn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/attn_clear"
+        android:layout_toRightOf="@id/attn_clear"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-5dp"
+      
+      android:layout_alignBottom="@id/attn_clear"
+        android:background="@drawable/btn_add_contact_selector" />
+
+    <ImageButton
+        android:id="@+id/attn_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/attn_phone"
+        android:layout_below="@id/attn_phone"
+        android:layout_marginLeft="-6dp"
+        android:background="@drawable/btn_key1_selector" />
+
+    <ImageButton
+        android:id="@+id/attn_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/attn_1"
+        android:layout_toRightOf="@id/attn_1"
+        android:background="@drawable/btn_key2_selector" />
+
+    <ImageButton
+        android:id="@+id/attn_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/attn_1"
+        android:layout_toRightOf="@id/attn_2"
+        android:layout_marginLeft="-2dp"
+        android:background="@drawable/btn_key3_selector" />
+
+    <ImageButton
+        android:id="@+id/attn_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/attn_phone"
+        android:layout_below="@id/attn_1"
+       android:layout_marginLeft="-6dp"
+        android:background="@drawable/btn_key4_selector" />
+
+    <ImageButton
+        android:id="@+id/attn_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/attn_4"
+        android:layout_toRightOf="@id/attn_4"
+        android:background="@drawable/btn_key5_selector" />
+
+    <ImageButton
+        android:id="@+id/attn_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/attn_4"
+        android:layout_toRightOf="@id/attn_5"
+        android:background="@drawable/btn_key6_selector" />
+
+    <ImageButton
+        android:id="@+id/attn_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/attn_phone"
+        android:layout_below="@id/attn_4"
+              android:layout_marginLeft="-6dp"
+        android:background="@drawable/btn_key7_selector" />
+
+    <ImageButton
+        android:id="@+id/attn_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/attn_7"
+        android:layout_toRightOf="@id/attn_7"
+      
+         
+        android:background="@drawable/btn_key8_selector" />
+
+    <ImageButton
+        android:id="@+id/attn_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/attn_7"
+        android:layout_toRightOf="@id/attn_8"
+       android:layout_marginTop="-6dp"
+        android:background="@drawable/btn_key9_selector" />
+
+    <ImageButton
+        android:id="@+id/attn_xin"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/attn_7"
+        android:layout_alignLeft="@id/attn_phone"
+        android:layout_height="wrap_content"
+            android:layout_marginLeft="-6dp"
+        android:background="@drawable/btn_key_star_selector" />
+
+    <ImageButton
+        android:id="@+id/attn_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/attn_xin"
+        android:layout_alignTop="@id/attn_xin"
+        android:background="@drawable/btn_key0_selector" />
+
+    <ImageButton
+        android:id="@+id/attn_jin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/attn_0"
+        android:layout_alignTop="@id/attn_xin"
+        android:background="@drawable/btn_key_jing_selector" />
+
+    <ImageButton
+        android:id="@+id/home_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/attn_9"
+        android:layout_below="@+id/attn_clear"
+        android:layout_toRightOf="@+id/attn_jin"
+        android:layout_marginTop="-9dp"
+        android:layout_alignRight="@id/attn_add"
+        android:layout_marginBottom="-3dp"
+        android:background="@drawable/btn_tv_selector" />
+    
+    
+    <ImageButton
+        android:id="@+id/home_call_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/attn_6"
+        android:layout_alignTop="@id/attn_9"
+        android:layout_alignBottom="@id/attn_jin"
+        android:layout_alignRight="@id/home_call"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_phone_selector" />
+
+</RelativeLayout>

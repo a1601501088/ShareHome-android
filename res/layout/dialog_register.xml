@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    >
+    
+    <TextView 
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:text="提示"
+        android:padding="5dp"
+        android:textSize="23sp"
+        android:background="@color/brandtop"
+        android:layout_height="wrap_content"
+        />
+    
+       
+    <TextView 
+        android:id="@+id/tv_dialog_msg"
+      android:gravity="center"
+  android:layout_below="@id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:text="你已注册成功，请用8加手机号登录"
+        android:textSize="22sp"
+        android:layout_height="150sp"
+        />
+    
+    <Button android:layout_width="match_parent"
+        android:text="我知道了"
+        android:id="@+id/tv_dialog_ok"
+        android:layout_margin="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_register_selector"
+        android:layout_below="@id/tv_dialog_msg"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

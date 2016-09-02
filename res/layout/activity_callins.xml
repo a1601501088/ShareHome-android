@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:background="@color/transparent" >
+
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:layout_width="500dp"
+        android:background="#a000"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/callins_icon"
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+            android:background="@drawable/call_icon1" />
+
+        <TextView
+            android:id="@+id/callins_phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/callins_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/PhoneNumber"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/callins_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/callins_phoneNumber"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:drawableTop="@drawable/btn_call_answer_selector"
+            android:text="接听"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/callouts_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/callins_answer"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/callins_answer"
+            android:background="@null"
+            android:drawableTop="@drawable/btn_call_cancel_selector"
+            android:text="挂断"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/switch_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/callins_answer"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/callins_answer"
+            android:background="@null"
+            android:drawableTop="@drawable/btn_siwtch_call_selector"
+            android:text="切换"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

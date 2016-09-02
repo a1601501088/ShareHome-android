@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+      android:background="@color/transparent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <SurfaceView
+        android:id="@+id/sv_small_video"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+   <SurfaceView
+        android:id="@+id/sv_localvideo"
+        android:layout_width="260dp"
+          android:background="@null"
+        android:layout_height="160dp" />
+    
+    
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/callvideo_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            
+
+                <TextView
+                    android:id="@+id/callvideo_PhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:text="1213"
+                      android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white" />
+        
+
+            <TextView
+                android:id="@+id/callvideo_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="通话状态"
+                  android:textSize="20sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/callvideo_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="00:00"
+                  android:textSize="20sp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_call_type_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp" >
+
+            <Button
+                android:id="@+id/callvideo_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableTop="@drawable/btn_call_cancel_selector"
+                android:text="挂断"
+                android:textSize="22sp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/callvideo_switch_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/callvideo_cancel"
+                android:background="@null"
+                android:textSize="22sp"
+                android:drawableTop="@drawable/btn_siwtch_call_selector"
+                android:text="切换"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/callvideo_mute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/callvideo_switch_audio"
+                android:background="@null"
+                android:textSize="22sp"
+                 android:layout_marginLeft="5dp"
+                android:drawableTop="@drawable/btn_call_mutel_selector"
+                android:text="静音"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
